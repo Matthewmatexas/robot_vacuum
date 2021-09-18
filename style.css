@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+.loader-content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation-name: atsiranda;
+    animation-duration: 5s;
+}
+.loader{
+    width: 50%;
+}
+.loading{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    border: 5px solid black;
+    border-left-color: white;
+    top: 70%;
+    animation-name: sukasi;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+@keyframes atsiranda{
+    0%{
+        opacity: 1;
+        z-index: 5;
+    }
+    90%{
+        opacity: 1;
+        z-index: 5;
+    }
+    100%{
+        
+    }
+}
+@keyframes at{
+    0%{
+        opacity: 1;
+    }
+    89%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        
+    }
+}
+@keyframes dydis{
+    0%{
+        transform: scale(1.0);
+    }
+    25%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1.0);
+    }
+    100%{
+        
+    }
+}
+@keyframes dingsta{
+    0%{
+        opacity: 0;
+        pointer-events: none;
+    }
+    90%{
+        opacity: 0;
+        pointer-events: none;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes sukasi{
+    0%{
+        transform: rotate(-2000deg);
+    }
+    100%{
+        
+    }
+}
+@keyframes sukasi2{
+    0%{
+        transform: rotate(-8000deg);
+    }
+    100%{
+        
+    }
+}
+@keyframes sukasi3{
+    0%{
+        transform: rotate(-20000deg);
+    }
+    100%{
+        
+    }
+}
+.loader img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-top: -50px;
+}
+h2{
+    padding-left: 15px;
+}
+.robot{
+    width: 90%;
+    height: 50vh;
+    box-shadow: 5px 5px 10px darkgray;
+    border-radius: 50px;
+    margin: 20px auto;
+    overflow: scroll;
+    padding-bottom: 20px;
+}
+.robot h3{
+    margin-left: 50px; 
+    padding-top: 30px;
+}
+.robot img{
+    text-align: center;
+    text-align: center;
+}
+.robot button{
+    display: block;
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border: none;
+    background-color: darkseagreen;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+button{
+    display: block;
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 0;
+    border: none;
+    background-color: darkseagreen;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.5;
+}
+.robot button:hover{
+    opacity: 0.5;
+}
+.notifications1{
+    width: 90%;
+    height: 70px;
+    box-shadow: 5px 5px 10px darkgray;
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notifications1 input{
+    width: 100%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid darkgray;
+    padding: 15px;
+}
+.wifi{
+    width: 90%;
+    height: 140px;
+    box-shadow: 5px 5px 10px darkgray;
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.wifi input{
+    width: 100%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid darkgray;
+    padding: 15px;
+}
+.buttons{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(195, 195, 195);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 30px 30px 0 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.buttons div img{
+    width: 50px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 67px;
+  height: 40px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
