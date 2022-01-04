@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo robot vacuums - cleaning</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <h1 style="margin: 20px; margin-bottom: 0;">Cleaning</h1>
+  <h1 style="margin: 20px; font-size: 20px;  margin-top: -15px;">Choose what to clean</h1>
+    <div style="border-top: 2px solid darkgray; width: 90%; margin: 0 auto;"></div>
+   <div class="notifications1">
+        <h3>Living room</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+   <div class="notifications1">
+        <h3>Hall</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+       <div class="notifications1">
+        <h3>Kitchen</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+    <div class="notifications1">
+        <h3>Office</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+    <div class="notifications1">
+        <h3>Eve's room</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+    <div class="notifications1">
+        <h3>Matthew's room</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+    <div class="notifications1">
+        <h3>Bathroom</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+    <div class="notifications1">
+        <h3>Bedroom</h3>
+        <label class="switch">
+              <input type="checkbox" id="myCheck" required>
+              <span class="slider round"></span>
+            </label>
+    </div>
+    <button onclick="myFunction()">Clean</button>
+    <div id="load" style="width: 50px; height: 50px; border-radius: 100%; border: 5px solid black; border-left-color: transparent; animation-name: sukasi; animation-duration: 5s; animation-iteration-count: infinite; animation-timing-function: linear; position: absolute; margin-top: -50px; display: none;"></div>
+    <form action="robot.html">
+    <button style="background-color: red; margin-top: 15px; color: white;">Cancel</button>
+    </form>
+    <script>
+        function myFunction() {
+            document.getElementById("load").style.display = "block";
+            setTimeout(() => {  location.replace("cleaning.html"); }, 5000);
+        }
+    </script>
+</body>
+</html>

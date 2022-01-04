@@ -96,7 +96,7 @@ body{
 }
 @keyframes sukasi{
     0%{
-        transform: rotate(-2000deg);
+        transform: rotate(-1800deg);
     }
     100%{
         
